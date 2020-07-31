@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="card1.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<!-- New Code added for Task List-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Task List</h3>
+        </div>
+        <div class="col-sm-6">
+            <div class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Create New Task
+            </div>
+<!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Create Task</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+    <!--Add Code for Modal body-->
+    <form action ="Submit.html" name = "myForm" onsubmit = "return validateTaskForm()" method="POST">
+        
+        <div class="row">
+          <div class="col-md-12">
+            <p>Name</p><input type="text" class="form-control" name="TaskName" >
+          </div>
+          </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Description</p><input type="text" class="form-control" name="description">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-12">
+                <p>AssignedTo</p><input type="text" class="form-control" name="assignedTo">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-6">
+                <p>DueDate</p><input type="date" class="form-control" name="dueDate">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <label for="inputState">Status</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Select</option>
+                    <option>TO DO</option>
+                    <option>IN PROGRESS</option>
+                    <option>REVIEW</option>
+                    <option>DONE</option>
+                </select>
+            </div>                                 
+        </div>           
+        <input type="submit" value="Save">
+      </form>
+    <!--End of Code-->
+          <!-- Modal body.. -->
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+         <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Save</button>-->
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--End of Copy-->
+        </div>
+    </div>
+    
+    <div class="list-group">
+        <div class="card" class="border border-dark">
+            <div class="card-body">
+                <h5 class="card-title">Create HTML Webpage</h5>
+                <h6 class="card-subtitle">Description</h6>
+                <p class="card-text">Some quick example text to build on the card title 
+                    and make up the bulk of the card's content.</p>
+                <h6 class="card-subtitle">Assigned to</h6>
+                <p class="card-text">Preeti</p>
+                <h6 class="card-subtitle">Due Date</h6>
+                <p class="card-text">10/07/2020</p>
+                <h6 class="card-subtitle">Status</h6>
+                <h6 class="card-text">DONE</h6>
+            </div>
+        </div>
+            
+
+        <div class="card" class="border border-dark">
+            <div class="card-body">
+                <h5 class="card-title">Add CSS in HTML Webpage</h5>
+                <h6 class="card-subtitle">Description</h6>
+                <p class="card-text">Some quick example text to build on the card title 
+                and make up the bulk of the card's content.</p>
+                <h6 class="card-subtitle">Assigned to</h6>
+                <p class="card-text">Preeti</p>
+                <h6 class="card-subtitle">Due Date</h6>
+                <p class="card-text">10/07/2020</p>
+                <h6 class="card-subtitle">Status</h6>
+                <h6 class="card-text">DONE</h6>
+            </div>
+        </div>
+
+        
+        <div class="card" class="border border-dark">
+            <div class="card-body">
+                <h5 class="card-title">Create Webpage using Bootstrap4</h5>
+                <h6 class="card-subtitle">Description</h6>
+                <p class="card-text">Some quick example text to build on the card title 
+                and make up the bulk of the card's content.</p>
+                <h6 class="card-subtitle">Assigned to</h6>
+                <p class="card-text">Happy</p>
+                <h6 class="card-subtitle">Due Date</h6>
+                <p class="card-text">13/07/2020</p>
+                <h6 class="card-subtitle">Status</h6>
+                <h6 class="card-text">DONE</h6>
+            </div>
+        </div>
+          
+
+        <div class="card" class="border border-dark">
+            <div class="card-body">
+                <h5 class="card-title">Add Navigation bar</h5>
+                <h6 class="card-subtitle">Description</h6>
+                <p class="card-text">Some quick example text to build on the card title 
+                and make up the bulk of the card's content.</p>
+                <h6 class="card-subtitle">Assigned to</h6>
+                <p class="card-text">Preeti</p>
+                <h6 class="card-subtitle">Due Date</h6>
+                <p class="card-text">17/07/2020</p>
+                <h6 class="card-subtitle">Status</h6>
+                <h6 class="card-text">REVIEW</h6>
+            </div>
+        </div>
+          
+
+        <div class="card">
+            <div class="card-body ">
+                <h5 class="card-title">Add Contact Information</h5>
+                <h6 class="card-subtitle">Description</h6>
+                <p class="card-text">Some quick example text to build on the card title 
+                and make up the bulk of the card's content.</p>
+                <h6 class="card-subtitle">Assigned to</h6>
+                <p class="card-text">Happy</p>
+                <h6 class="card-subtitle">Due Date</h6>
+                <p class="card-text">21/07/2020</p>
+                <h6 class="card-subtitle">Status</h6>
+                <h6 class="card-text">IN PROGRESS</h6>
+            </div>
+        </div>
+    </div>
+  
+  </div>
+<!-- End of Code for Task List-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
